@@ -40,29 +40,35 @@ A Python-based, secure keystroke logging tool designed for **controlled cybersec
 ### Prerequisites
 Ensure Python is installed. Then install dependencies
 
+---
+
 ## ⚙️ Configuration
 
 LOG_DIR = r"C:\Your\Preferred\Log\Directory"
 PASSWORD = "YourStrongPassword"
 
+---
+
 ## ▶️ Usage
 
 1. Run the script:
 python secure_keylogger.py
-
 2. The logger will start in the background, logging keystrokes.
-
 3. Press Esc to:
     Stop logging
     Automatically encrypt the .txt file
     Delete the original (plaintext) log
 
-##🔐 Encryption Overview
+---
+
+## 🔐 Encryption Overview
 
 1. Method: AES (via cryptography.fernet)
 2. Key: Password padded to 32 bytes and base64 encoded
 3. Output: .enc encrypted file in the same log directory
 4. Security: Original .txt file is securely deleted after encryption
+
+---
 
 ## ⚠️ Disclaimer
 This tool is strictly for:
@@ -75,6 +81,8 @@ This tool is strictly for:
 Do not install this tool on systems without explicit permission.
 
 I am not responsible for any misuse of this code. Use at your own risk, and always adhere to legal and ethical standards.
+
+--- 
 
 ## 📄 License
 This project is licensed under the MIT License.
